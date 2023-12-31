@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>main.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+.s4 { color: #7a7e85;}
+.s5 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.py</font>
+</center></td></tr></table>
+<pre><span class="s0">from </span><span class="s1">typing </span><span class="s0">import </span><span class="s1">List</span>
+<span class="s0">from </span><span class="s1">fastapi </span><span class="s0">import </span><span class="s1">FastAPI</span><span class="s2">, </span><span class="s1">File</span><span class="s2">, </span><span class="s1">UploadFile</span>
+<span class="s0">from </span><span class="s1">fastapi</span><span class="s2">.</span><span class="s1">middleware</span><span class="s2">.</span><span class="s1">cors </span><span class="s0">import </span><span class="s1">CORSMiddleware</span>
+<span class="s0">import </span><span class="s1">uvicorn</span>
+<span class="s0">import </span><span class="s1">numpy </span><span class="s0">as </span><span class="s1">np</span>
+<span class="s0">from </span><span class="s1">joblib </span><span class="s0">import </span><span class="s1">load</span>
+<span class="s0">import </span><span class="s1">pandas </span><span class="s0">as </span><span class="s1">pd</span>
+
+<span class="s1">print</span><span class="s2">(</span><span class="s3">&quot;Hello from Python script!&quot;</span><span class="s2">)</span>
+<span class="s1">model </span><span class="s2">= </span><span class="s1">load</span><span class="s2">(</span><span class="s3">&quot;heart_discease_model.joblib&quot;</span><span class="s2">)</span>
+
+<span class="s1">app </span><span class="s2">= </span><span class="s1">FastAPI</span><span class="s2">()</span>
+<span class="s1">origins </span><span class="s2">= [</span>
+    <span class="s3">&quot;http://localhost&quot;</span><span class="s2">,</span>
+    <span class="s3">&quot;http://localhost:3000&quot;</span><span class="s2">,</span>
+<span class="s2">]</span>
+
+<span class="s1">app</span><span class="s2">.</span><span class="s1">add_middleware</span><span class="s2">(</span>
+    <span class="s1">CORSMiddleware</span><span class="s2">,</span>
+    <span class="s1">allow_origins</span><span class="s2">=[</span><span class="s3">&quot;*&quot;</span><span class="s2">],  </span><span class="s4"># Allow all origins during development</span>
+    <span class="s1">allow_credentials</span><span class="s2">=</span><span class="s0">True</span><span class="s2">,</span>
+    <span class="s1">allow_methods</span><span class="s2">=[</span><span class="s3">&quot;*&quot;</span><span class="s2">],</span>
+    <span class="s1">allow_headers</span><span class="s2">=[</span><span class="s3">&quot;*&quot;</span><span class="s2">],</span>
+<span class="s2">)</span>
+
+
+<span class="s2">@</span><span class="s1">app</span><span class="s2">.</span><span class="s1">get</span><span class="s2">(</span><span class="s3">&quot;/&quot;</span><span class="s2">)</span>
+<span class="s0">async def </span><span class="s1">ping</span><span class="s2">():</span>
+    <span class="s0">return </span><span class="s3">&quot;Hello,ayoub from FastAPI!&quot;</span>
+
+
+<span class="s2">@</span><span class="s1">app</span><span class="s2">.</span><span class="s1">post</span><span class="s2">(</span><span class="s3">&quot;/predict/&quot;</span><span class="s2">)</span>
+<span class="s0">async def </span><span class="s1">read_items</span><span class="s2">(</span><span class="s1">q</span><span class="s2">: </span><span class="s1">List</span><span class="s2">[</span><span class="s1">float</span><span class="s2">]):</span>
+    <span class="s1">my_array </span><span class="s2">= </span><span class="s1">np</span><span class="s2">.</span><span class="s1">array</span><span class="s2">([</span><span class="s1">q</span><span class="s2">])</span>
+    <span class="s1">list_of_parameters </span><span class="s2">= [</span><span class="s3">'age'</span><span class="s2">, </span><span class="s3">'sex'</span><span class="s2">, </span><span class="s3">'cp'</span><span class="s2">, </span><span class="s3">'trestbps'</span><span class="s2">, </span><span class="s3">'chol'</span><span class="s2">, </span><span class="s3">'fbs'</span><span class="s2">, </span><span class="s3">'restecg'</span><span class="s2">, </span><span class="s3">'thalach'</span><span class="s2">, </span><span class="s3">'exang'</span><span class="s2">, </span><span class="s3">'oldpeak'</span><span class="s2">,</span>
+                          <span class="s3">'slope'</span><span class="s2">, </span><span class="s3">'ca'</span><span class="s2">, </span><span class="s3">'thal'</span><span class="s2">]</span>
+    <span class="s1">print</span><span class="s2">(</span><span class="s1">my_array</span><span class="s2">)</span>
+    <span class="s1">df_to_predict </span><span class="s2">= </span><span class="s1">pd</span><span class="s2">.</span><span class="s1">DataFrame</span><span class="s2">(</span><span class="s1">my_array</span><span class="s2">, </span><span class="s1">columns</span><span class="s2">=</span><span class="s1">list_of_parameters</span><span class="s2">)</span>
+    <span class="s1">print</span><span class="s2">(</span><span class="s3">'ffff'</span><span class="s2">)</span>
+    <span class="s1">print</span><span class="s2">(</span><span class="s1">df_to_predict</span><span class="s2">)</span>
+
+    <span class="s1">result </span><span class="s2">= </span><span class="s1">model</span><span class="s2">.</span><span class="s1">predict</span><span class="s2">(</span><span class="s1">df_to_predict</span><span class="s2">)[</span><span class="s5">0</span><span class="s2">]</span>
+    <span class="s1">print</span><span class="s2">(</span><span class="s1">result</span><span class="s2">)</span>
+    <span class="s1">result </span><span class="s2">= </span><span class="s1">int</span><span class="s2">(</span><span class="s1">result</span><span class="s2">)</span>
+
+    <span class="s0">return </span><span class="s2">{</span><span class="s3">&quot;value&quot;</span><span class="s2">: </span><span class="s1">result</span><span class="s2">}</span>
+
+
+<span class="s0">if </span><span class="s1">__name__ </span><span class="s2">== </span><span class="s3">&quot;__main__&quot;</span><span class="s2">:</span>
+    <span class="s1">uvicorn</span><span class="s2">.</span><span class="s1">run</span><span class="s2">(</span><span class="s1">app</span><span class="s2">, </span><span class="s1">host</span><span class="s2">=</span><span class="s3">'localhost'</span><span class="s2">, </span><span class="s1">port</span><span class="s2">=</span><span class="s5">8000</span><span class="s2">)</span>
+
+</pre>
+</body>
+</html>

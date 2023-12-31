@@ -1,0 +1,15 @@
+List<List<String>> titleList = [
+  ['What is the age of the patient', 'upon admission to the hospital'],
+  ['What is the sex of the patient', 'please enter 0 if the patient is male and 1 if the patient is a female'],
+  ['What is the chest pain of the patient', '0 = typical angina, 1 = atypical angina, 2 = non-anginal pain, 3 = asymptomatic'],
+  ['What is the resting blood pressure of the patient', '(in mm Hg) upon admission to the hospital'],
+  ['What is the serum cholesterol level', 'measured in mg/dl'],
+  ['What is the fasting blood sugar of the patient', 'Fasting blood sugar > 120 mg/dl (1 = true, 0 = false)'],
+  ['What is the resting electrocardiographic results of the patient', '0 = normal, 1 = having ST-T wave abnormality, 2 = showing probable or definite left ventricular hypertrophy'],
+  ['What is the maximum heart rate achieved', 'when the patient was admitted for more than a full day with his heart beat recorded'],
+  ['Does the patient exercise-induced angina', '1 = yes, 0 = no'],
+  ['What is the ST depression induced by exercise relative to rest of the patient', ''],
+  ['What is the slope of the peak exercise ST segment', '0 = downsloping, 1 = flat, 2 = upsloping'],
+  ['What is the number of major vessels of the patient', '(0-3) colored by fluoroscopy'],
+  ['What is the state of Thalassemia for the patient', '1 = normal, 2 = fixed defect, 3 = reversible defect'],
+];
