@@ -7,7 +7,7 @@ from joblib import load
 import pandas as pd
 
 print("Hello from Python script!")
-model = load("heart_discease_model.joblib")
+model = load("heart_disease_model2.joblib")
 
 app = FastAPI()
 origins = [
