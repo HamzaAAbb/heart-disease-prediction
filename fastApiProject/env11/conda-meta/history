@@ -1,0 +1,89 @@
+==> 2024-05-15 10:11:02 <==
+# cmd: /home/hamza/miniconda3/bin/conda create -p ./env11 conda-forge::fastapi numpy pandas joblib conda-forge::uvicorn
+# conda version: 23.11.0
++conda-forge/linux-64::_libgcc_mutex-0.1-conda_forge
++conda-forge/linux-64::_openmp_mutex-4.5-2_gnu
++conda-forge/linux-64::libexpat-2.6.2-h59595ed_0
++conda-forge/linux-64::libgcc-ng-13.2.0-h77fa898_7
++conda-forge/linux-64::libgomp-13.2.0-h77fa898_7
++conda-forge/linux-64::libnsl-2.0.1-hd590300_0
++conda-forge/linux-64::libsqlite-3.45.3-h2797004_0
++conda-forge/linux-64::libuuid-2.38.1-h0b41bf4_0
++conda-forge/linux-64::libxcrypt-4.4.36-hd590300_1
++conda-forge/linux-64::libzlib-1.2.13-hd590300_5
++conda-forge/linux-64::ncurses-6.5-h59595ed_0
++conda-forge/linux-64::openssl-3.3.0-hd590300_0
++conda-forge/linux-64::python-3.12.3-hab00c5b_0_cpython
++conda-forge/linux-64::python_abi-3.12-4_cp312
++conda-forge/linux-64::uvicorn-0.29.0-py312h7900ff3_0
++conda-forge/linux-64::zlib-1.2.13-hd590300_5
++conda-forge/noarch::email-validator-2.1.1-pyhd8ed1ab_0
++conda-forge/noarch::email_validator-2.1.1-hd8ed1ab_0
++conda-forge/noarch::fastapi-0.111.0-pyhd8ed1ab_0
++conda-forge/noarch::fastapi-cli-0.0.3-pyhd8ed1ab_0
++conda-forge/noarch::python-multipart-0.0.9-pyhd8ed1ab_0
++conda-forge/noarch::starlette-0.37.2-pyhd8ed1ab_0
++conda-forge/noarch::typer-0.12.3-pyhd8ed1ab_0
++conda-forge/noarch::typer-slim-0.12.3-pyhd8ed1ab_0
++conda-forge/noarch::typer-slim-standard-0.12.3-hd8ed1ab_0
++defaults/linux-64::annotated-types-0.6.0-py312h06a4308_0
++defaults/linux-64::anyio-4.2.0-py312h06a4308_0
++defaults/linux-64::blas-1.0-openblas
++defaults/linux-64::bottleneck-1.3.7-py312ha883a20_0
++defaults/linux-64::bzip2-1.0.8-h5eee18b_6
++defaults/linux-64::ca-certificates-2024.3.11-h06a4308_0
++defaults/linux-64::certifi-2024.2.2-py312h06a4308_0
++defaults/linux-64::cffi-1.16.0-py312h5eee18b_1
++defaults/linux-64::click-8.1.7-py312h06a4308_0
++defaults/linux-64::cryptography-42.0.5-py312hdda0065_1
++defaults/linux-64::dnspython-2.4.2-py312h06a4308_0
++defaults/linux-64::h11-0.14.0-py312h06a4308_0
++defaults/linux-64::httpcore-1.0.2-py312h06a4308_0
++defaults/linux-64::httpx-0.26.0-py312h06a4308_0
++defaults/linux-64::idna-3.7-py312h06a4308_0
++defaults/linux-64::jinja2-3.1.3-py312h06a4308_0
++defaults/linux-64::joblib-1.4.0-py312h06a4308_0
++defaults/linux-64::ld_impl_linux-64-2.38-h1181459_1
++defaults/linux-64::libffi-3.4.4-h6a678d5_1
++defaults/linux-64::libgfortran-ng-11.2.0-h00389a5_1
++defaults/linux-64::libgfortran5-11.2.0-h1234567_1
++defaults/linux-64::libopenblas-0.3.21-h043d6bf_0
++defaults/linux-64::libstdcxx-ng-11.2.0-h1234567_1
++defaults/linux-64::markdown-it-py-2.2.0-py312h06a4308_1
++defaults/linux-64::markupsafe-2.1.3-py312h5eee18b_0
++defaults/linux-64::mdurl-0.1.0-py312h06a4308_0
++defaults/linux-64::numexpr-2.8.7-py312he7dcb8a_0
++defaults/linux-64::numpy-1.26.4-py312h2809609_0
++defaults/linux-64::numpy-base-1.26.4-py312he1a6c75_0
++defaults/linux-64::orjson-3.9.15-py312h97a8848_0
++defaults/linux-64::pandas-2.2.1-py312h526ad5a_0
++defaults/linux-64::pip-24.0-py312h06a4308_0
++defaults/linux-64::pydantic-2.5.3-py312h06a4308_0
++defaults/linux-64::pydantic-core-2.14.6-py312hb02cf49_0
++defaults/linux-64::pygments-2.15.1-py312h06a4308_1
++defaults/linux-64::python-dateutil-2.9.0post0-py312h06a4308_0
++defaults/linux-64::pytz-2024.1-py312h06a4308_0
++defaults/linux-64::readline-8.2-h5eee18b_0
++defaults/linux-64::rich-13.3.5-py312h06a4308_1
++defaults/linux-64::setuptools-69.5.1-py312h06a4308_0
++defaults/linux-64::shellingham-1.5.0-py312h06a4308_0
++defaults/linux-64::sniffio-1.3.0-py312h06a4308_0
++defaults/linux-64::tk-8.6.14-h39e8969_0
++defaults/linux-64::typing-extensions-4.11.0-py312h06a4308_0
++defaults/linux-64::typing_extensions-4.11.0-py312h06a4308_0
++defaults/linux-64::ujson-5.4.0-py312h6a678d5_0
++defaults/linux-64::wheel-0.43.0-py312h06a4308_0
++defaults/linux-64::xz-5.4.6-h5eee18b_1
++defaults/noarch::pycparser-2.21-pyhd3eb1b0_0
++defaults/noarch::python-tzdata-2023.3-pyhd3eb1b0_0
++defaults/noarch::six-1.16.0-pyhd3eb1b0_1
++defaults/noarch::tzdata-2024a-h04d1e81_0
+# update specs: ['conda-forge::fastapi', 'conda-forge::uvicorn', 'joblib', 'numpy', 'pandas']
+==> 2024-05-15 10:13:45 <==
+# cmd: /home/hamza/miniconda3/bin/conda install scikit-learn
+# conda version: 23.11.0
++defaults/linux-64::scikit-learn-1.4.2-py312h526ad5a_1
++defaults/linux-64::scipy-1.13.0-py312h2809609_0
++defaults/noarch::pybind11-abi-5-hd3eb1b0_0
++defaults/noarch::threadpoolctl-2.2.0-pyh0d69192_0
+# update specs: ['scikit-learn']

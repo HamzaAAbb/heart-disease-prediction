@@ -1,0 +1,11 @@
+prefix=/home/hamza/Documents/heart-disease-prediction/fastApiProject/env11
+exec_prefix=/home/hamza/Documents/heart-disease-prediction/fastApiProject/env11
+libdir=/home/hamza/Documents/heart-disease-prediction/fastApiProject/env11/lib
+includedir=/home/hamza/Documents/heart-disease-prediction/fastApiProject/env11/include
+
+Name: uuid
+Description: Universally unique id library
+Version: 2.38.1
+Requires:
+Cflags: -I${includedir}/uuid
+Libs: -L${libdir} -luuid

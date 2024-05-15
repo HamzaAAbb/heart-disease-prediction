@@ -1,0 +1,33 @@
+{
+  "build": "hd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "email-validator >=2.1.1,<2.1.2.0a0"
+  ],
+  "extracted_package_dir": "/home/hamza/miniconda3/pkgs/email_validator-2.1.1-hd8ed1ab_0",
+  "files": [],
+  "fn": "email_validator-2.1.1-hd8ed1ab_0.conda",
+  "license": "Unlicense",
+  "link": {
+    "source": "/home/hamza/miniconda3/pkgs/email_validator-2.1.1-hd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "6b084a2de311de1ed0640e9ada01b4d2",
+  "name": "email_validator",
+  "noarch": "generic",
+  "package_tarball_full_path": "/home/hamza/miniconda3/pkgs/email_validator-2.1.1-hd8ed1ab_0.conda",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "6a13717a5f7c7e0d619d0675c562abff8d8b0993b22b5af5957b7b64b67cd606",
+  "size": 6616,
+  "subdir": "noarch",
+  "timestamp": 1709024550000,
+  "url": "https://conda.anaconda.org/conda-forge/noarch/email_validator-2.1.1-hd8ed1ab_0.conda",
+  "version": "2.1.1"
+}

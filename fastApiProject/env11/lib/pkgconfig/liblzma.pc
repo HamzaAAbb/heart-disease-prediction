@@ -1,0 +1,20 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/home/hamza/Documents/heart-disease-prediction/fastApiProject/env11
+exec_prefix=/home/hamza/Documents/heart-disease-prediction/fastApiProject/env11
+libdir=/home/hamza/Documents/heart-disease-prediction/fastApiProject/env11/lib
+includedir=/home/hamza/Documents/heart-disease-prediction/fastApiProject/env11/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: https://xz.tukaani.org/xz-utils/
+Version: 5.4.6
+Cflags: -I${includedir}
+Cflags.private: -DLZMA_API_STATIC
+Libs: -L${libdir} -llzma
+Libs.private: -pthread -lpthread

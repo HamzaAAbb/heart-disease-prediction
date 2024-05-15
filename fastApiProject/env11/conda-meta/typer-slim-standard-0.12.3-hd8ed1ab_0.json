@@ -1,0 +1,35 @@
+{
+  "build": "hd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "rich",
+    "shellingham",
+    "typer-slim 0.12.3 pyhd8ed1ab_0"
+  ],
+  "extracted_package_dir": "/home/hamza/miniconda3/pkgs/typer-slim-standard-0.12.3-hd8ed1ab_0",
+  "files": [],
+  "fn": "typer-slim-standard-0.12.3-hd8ed1ab_0.conda",
+  "license": "MIT",
+  "link": {
+    "source": "/home/hamza/miniconda3/pkgs/typer-slim-standard-0.12.3-hd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "8e56b98837d17e6ace4dc455d905709a",
+  "name": "typer-slim-standard",
+  "noarch": "generic",
+  "package_tarball_full_path": "/home/hamza/miniconda3/pkgs/typer-slim-standard-0.12.3-hd8ed1ab_0.conda",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "06e2f8ca7e3f7168a39d3d2cc62ee1e220928e1e5a4370f4ade2566342c4a459",
+  "size": 46047,
+  "subdir": "noarch",
+  "timestamp": 1712702688000,
+  "url": "https://conda.anaconda.org/conda-forge/noarch/typer-slim-standard-0.12.3-hd8ed1ab_0.conda",
+  "version": "0.12.3"
+}

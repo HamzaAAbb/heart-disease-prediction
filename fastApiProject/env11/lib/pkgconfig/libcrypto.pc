@@ -1,0 +1,11 @@
+libdir=/home/hamza/Documents/heart-disease-prediction/fastApiProject/env11/lib
+includedir=/home/hamza/Documents/heart-disease-prediction/fastApiProject/env11/include
+enginesdir=/home/hamza/Documents/heart-disease-prediction/fastApiProject/env11/lib/engines-3
+modulesdir=/home/hamza/Documents/heart-disease-prediction/fastApiProject/env11/lib/ossl-modules
+
+Name: OpenSSL-libcrypto
+Description: OpenSSL cryptography library
+Version: 3.3.0
+Libs: -L${libdir} -lcrypto
+Libs.private: -ldl -pthread
+Cflags: -I${includedir}
