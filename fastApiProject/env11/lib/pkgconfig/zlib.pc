@@ -1,8 +1,8 @@
 prefix=/home/hamza/Documents/heart-disease-prediction/fastApiProject/env11
-exec_prefix=${prefix}
-libdir=${exec_prefix}/lib
-sharedlibdir=${libdir}
-includedir=${prefix}/include
+exec_prefix=/home/hamza/Documents/heart-disease-prediction/fastApiProject/env11
+libdir=/home/hamza/Documents/heart-disease-prediction/fastApiProject/env11/lib
+sharedlibdir=/home/hamza/Documents/heart-disease-prediction/fastApiProject/env11/lib
+includedir=/home/hamza/Documents/heart-disease-prediction/fastApiProject/env11/include
 
 Name: zlib
 Description: zlib compression library

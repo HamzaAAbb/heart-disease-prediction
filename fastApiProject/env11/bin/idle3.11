@@ -1,0 +1,5 @@
+#!/home/hamza/Documents/heart-disease-prediction/fastApiProject/env11/bin/python3.11
+
+from idlelib.pyshell import main
+if __name__ == '__main__':
+    main()

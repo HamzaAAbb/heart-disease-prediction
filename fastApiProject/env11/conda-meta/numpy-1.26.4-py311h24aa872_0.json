@@ -1,0 +1,36 @@
+{
+  "build": "py311h24aa872_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "blas * openblas",
+    "libgcc-ng >=11.2.0",
+    "libopenblas >=0.3.21,<1.0a0",
+    "libstdcxx-ng >=11.2.0",
+    "numpy-base 1.26.4 py311hbfb1bba_0",
+    "python >=3.11,<3.12.0a0"
+  ],
+  "extracted_package_dir": "/home/hamza/miniconda3/pkgs/numpy-1.26.4-py311h24aa872_0",
+  "files": [],
+  "fn": "numpy-1.26.4-py311h24aa872_0.conda",
+  "license": "BSD-3-Clause",
+  "link": {
+    "source": "/home/hamza/miniconda3/pkgs/numpy-1.26.4-py311h24aa872_0",
+    "type": 1
+  },
+  "md5": "3447c7f46001d1db6c6df26bf4cd461c",
+  "name": "numpy",
+  "package_tarball_full_path": "/home/hamza/miniconda3/pkgs/numpy-1.26.4-py311h24aa872_0.conda",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "numpy",
+  "sha256": "436a11cd17269f0f4d2da71a92fec848714c3f018230529a15abda0256f98d19",
+  "size": 10738,
+  "subdir": "linux-64",
+  "timestamp": 1708641745000,
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/numpy-1.26.4-py311h24aa872_0.conda",
+  "version": "1.26.4"
+}
